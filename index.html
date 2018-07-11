@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 1</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</head>
+<body ng-app>
+  <style>
+  input.ng-invalid {
+    background-color:pink;
+  }
+  input.ng-valid-['@'] {
+    background-color:lightgreen;
+  }
+  </style>
+  <p>Rentrez votre mail:</p>
+  <form name="myForm">
+    <input name="myName" ng-model="myName" required />
+  </form>
+
+</body>
+</html>

@@ -7,18 +7,11 @@
   <script src="assets/js/script.js"></script>
 </head>
 <body ng-app>
-  <style>
-  input.ng-invalid {
-    background-color:pink;
-  }
-  input.ng-valid-['@'] {
-    background-color:lightgreen;
-  }
-  </style>
-  <p>Rentrez votre mail:</p>
-  <form name="myForm">
-    <input name="myName" ng-model="myName" required />
-  </form>
+    <form name="titi">
+          <label for="mail"></label><input type="email" name="mail" ng-model="mail" required />
+          <div ng-show="titi.mail.$valid" style="color: green" border 2px>J'adore</div>
+          <div ng-show="titi.mail.$error" style="color: red" border 2px>La bite à papa</div>
 
+    </form>
 </body>
 </html>

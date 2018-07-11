@@ -9,8 +9,8 @@
 <body ng-app>
     <form name="titi">
           <label for="mail"></label><input type="email" name="mail" ng-model="mail" required />
-          <div ng-show="titi.mail.$valid" style="color: green" border 2px>J'adore</div>
-          <div ng-show="titi.mail.$error" style="color: red" border 2px>La bite à papa</div>
+          <div ng-show="titi.mail.$valid" ng-hide="titi.mail.$error" style="color: green">La bite à papa</div>
+          <div ng-show="titi.mail.$error" ng-hide="titi.mail.$valid" style="color: red">J'adore</div>
 
     </form>
 </body>
